@@ -1,0 +1,86 @@
+.components
+	&__title
+		text-align: center
+		margin-bottom: 20px
+	&__list
+		display: flex
+		justify-content: space-around
+		flex-wrap: wrap
+		&--top
+			margin-bottom: 20px
+		&--bottom
+			margin-bottom: 25px
+			padding-bottom: 25px
+			border-bottom: 1px solid rgba(0,0,0,.1)
+			position: relative
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				width: 0
+				height: 0
+				border-style: solid
+				left: 50%
+				border-width: 12px 12.5px 0
+				transform: translateX(-50%)
+				bottom: -12px
+				border-color: white transparent transparent
+				z-index: 1
+			&::after
+				content: ''
+				display: block
+				position: absolute
+				width: 0
+				height: 0
+				border-style: solid
+				left: 50%
+				border-width: 12px 12.5px 0
+				transform: translateX(-50%)
+				bottom: -13px
+				border-color: rgba(0,0,0,.1) transparent transparent
+	.item
+		text-align: center
+		width: 200px
+		&:nth-of-type(-n+2)
+			margin-bottom: 15px
+	.ttl
+		text-align: center
+		font-weight: 700
+		font-size: 20px
+		margin-bottom: 15px
+		position: relative
+		padding-bottom: 10px
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+			height: 3px
+			width: 50px
+			background-color: #6c3e98
+			background-image: linear-gradient(to left,#fb7625 0,#613497 100%)
+	&__doctor
+		display: flex
+		align-items: center
+	.doctor
+		margin-right: 10px
+		max-width: 100%
+		width: 160px
+	.content
+		&__name
+			font-weight: 600
+			font-size: 17px
+		&__post
+			color: #666
+			font-size: 14px
+			font-style: italic
+			margin-bottom: 5px
+		&__text
+			color: #444
+			line-height: 21px
+			font-size: 15px
+			.color
+				color: #633596
+				font-weight: 500s
